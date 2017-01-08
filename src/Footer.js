@@ -31,9 +31,9 @@ export default class Footer extends Component {
             </Col>
           </Col>
           <Col md={4} sm={4} xs={4}>
-            <Col md={2} sm={2}><a className="social" target="_blank" href="https://twitter.com/jsnyc2017"><i className="fa fa-twitter" aria-hidden="true"></i></a></Col>
-            <Col md={2} sm={2}><a className="social" target="_blank" href="https://www.meetup.com/JavaScript-New-York-City/"><i className="fa fa-meetup" aria-hidden="true"></i></a></Col>
-            <Col md={2} sm={2}><a className="social" target="_blank" href="https://www.facebook.com/JavaScriptNYC/"><i className="fa fa-facebook" aria-hidden="true"></i></a></Col>
+            <Col md={2} sm={2} xs={3}><a className="social" target="_blank" href="https://twitter.com/jsnyc2017"><i className="fa fa-twitter" aria-hidden="true"></i></a></Col>
+            <Col md={2} sm={2} xs={3}><a className="social" target="_blank" href="https://www.meetup.com/JavaScript-New-York-City/"><i className="fa fa-meetup" aria-hidden="true"></i></a></Col>
+            <Col md={2} sm={2} xs={3}><a className="social" target="_blank" href="https://www.facebook.com/JavaScriptNYC/"><i className="fa fa-facebook" aria-hidden="true"></i></a></Col>
           </Col>
         </Row>
       </Grid>
