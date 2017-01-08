@@ -17,7 +17,7 @@ export default class Footer extends Component {
             </Col>
             <Col md={4}>
               <Row>
-                <a className="contact-link">Link</a>
+                <a className="contact-link" href="https://www.meetup.com/JavaScript-New-York-City/">JavaScript.NYC on meetup</a>
               </Row>
               <Row>
                 <a className="contact-link">Link</a>
