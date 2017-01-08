@@ -25,7 +25,6 @@ class Sponsors extends Component {
     }
     else {
       var sponsor = sponsorInfo[0]
-      console.log(sponsorInfo)
       eachSponsor = (
         <Col md={2} mdOffset={5}>
           <a  href={sponsor.sponsorSite} target="_blank">
