@@ -12,7 +12,7 @@ export default class Footer extends Component {
                 <h2>Contact Us</h2>
               </Row>
               <Row>
-                  © Copyright 2016 JavaScript NYC
+                  © Copyright 2017 JavaScript NYC
               </Row>
             </Col>
             <Col md={4}>
