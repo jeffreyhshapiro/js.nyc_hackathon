@@ -1,0 +1,30 @@
+.App-header {
+  background-color: #222;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.logo {
+  height: 300px;
+  width: auto;
+}
+
+#intro-section {
+  text-align: center;
+}
+
+#sponsors-heading {
+  text-align: center;
+}
+
+#sponsors {
+  text-align: center;
+}
+
+#contact-us {
+  text-align: center
+}
