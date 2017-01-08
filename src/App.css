@@ -35,3 +35,8 @@
 tr{
   font-family: Arial Black, Gadget, sans-serif;
 }
+
+.scheduleSection {
+  background-color: rgba(0,115,207, 0.4);
+  padding: 2px;
+}

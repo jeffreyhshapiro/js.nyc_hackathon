@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Table} from 'react-bootstrap';
+import {Table, Row, Col} from 'react-bootstrap';
 
 const sampleSchedule = [
   {
@@ -57,11 +57,15 @@ class Schedule extends Component {
       </tr>
     )
     return (
-      <Table striped bordered condensed hover>
-        <tbody>
-          {schedules}
-        </tbody>
-      </Table>
+      <Row>
+        <Col md={6} sm={6} mdOffset={3} smOffset={3}>
+          <Table bordered condensed hover>
+            <tbody>
+              {schedules}
+            </tbody>
+          </Table>
+        </Col>
+      </Row>
     )
   }
 }

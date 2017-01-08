@@ -36,7 +36,8 @@ class App extends Component {
             <div>Prizes awarded to 1st, 2nd, and 3rd place teams</div>
           </div>
         </div>
-        <div>
+        <br />
+        <div className="scheduleSection">
           <Container>
             <h2 id="intro-section">Schedule</h2>
             <Schedule />
