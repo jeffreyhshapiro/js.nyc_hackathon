@@ -1,46 +1,54 @@
 import React, { Component } from 'react';
-import {Container, Row, Col} from 'react-grid-system';
+import {Image, Grid, Row, Col} from 'react-bootstrap'
 
 const sponsorInfo = [
   {
-    name: 'Sponsor 1',
-    img: 'http://placehold.it/150x150',
-    sponsorSite: 'https://www.google.com'
+    name: 'StrongLoop',
+    img: 'https://upload.wikimedia.org/wikipedia/en/1/11/StrongLoop_logo.png',
+    sponsorSite: 'https://strongloop.com/'
   },
-  {
-    name: 'Sponsor 2',
-    img: 'http://placehold.it/150x150',
-    sponsorSite: 'https://www.google.com'
-  },
-  {
-    name: 'Sponsor 3',
-    img: 'http://placehold.it/150x150',
-    sponsorSite: 'https://www.google.com'
-  }
 ];
+
 
 class Sponsors extends Component {
   render() {
-    var eachSponsor = sponsorInfo.map((sponsor, index) =>
-      <Col sm={4} key={index}>
-        <a href={sponsor.sponsorSite} target="_blank">
-          <img className="sponsorPhoto" src={sponsor.img} alt={sponsor.name} />
-        </a>
-        <div>{sponsor.name}</div>
-      </Col>
-    )
+    var eachSponsor;
+    if (sponsorInfo.length > 1 ) {
+      eachSponsor = sponsorInfo.map((sponsor, index) =>
+        <Col sm={4} key={index} >
+          <a  href={sponsor.sponsorSite} target="_blank">
+            <Image src={sponsor.img} alt={sponsor.name} responsive />
+          </a>
+          <div>{sponsor.name}</div>
+        </Col>
+      )
+    }
+    else {
+      var sponsor = sponsorInfo[0]
+      console.log(sponsorInfo)
+      eachSponsor = (
+        <Col md={2} mdOffset={5}>
+          <a  href={sponsor.sponsorSite} target="_blank">
+            <Image src={sponsor.img} alt={sponsor.name} responsive />
+          </a>
+        </Col>
+      )
+    }
+
     return (
-      <div id="sponsors-section">
-        <h2 id="sponsors-heading">Sponsors</h2>
-        <div id="sponsors">
-          <Container>
+
+          <Grid>
+            <Row>
+              <Col className="text-center">
+                <h2 id="sponsors-heading">Sponsors</h2>
+
+              </Col>
+            </Row>
             <Row>
               { eachSponsor }
             </Row>
-          </Container>
-        </div>
-      </div>
-    )
+          </Grid>
+      )
   }
 }
 

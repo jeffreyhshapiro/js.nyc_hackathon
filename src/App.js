@@ -3,9 +3,8 @@ import './App.css';
 import {Container} from 'react-grid-system';
 import logo from '../img/jsnyc.jpeg'
 import Sponsor from './sponsor.jsx'
-import ContactUs from './contactus.jsx'
 import Schedule from './schedule.jsx'
-
+import Footer from './Footer'
 const altProp = {
   'alt':'JavaScriptNYC'
 }
@@ -47,7 +46,7 @@ class App extends Component {
           <Sponsor />
         </div>
         <div>
-          <ContactUs />
+          <Footer />
         </div>
       </div>
     );

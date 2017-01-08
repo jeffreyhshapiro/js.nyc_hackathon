@@ -1,0 +1,26 @@
+.footer {
+  background-color: black;
+  padding:5vh;
+  font-size: 1.1em;
+  color:#FBE05D;
+}
+.contact {
+  font-size:1.5em;
+  font-weight:500;
+}
+a.social {
+  color:#FBE05D;
+  font-size:2em;
+}
+a.social:hover {
+  color:white;
+}
+
+.contact-link {
+  cursor: pointer;
+  color:#FBE05D;
+}
+.contact-link:hover {
+  text-decoration: none;
+  color:#FBE05D;
+}
