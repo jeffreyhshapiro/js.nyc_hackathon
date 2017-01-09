@@ -19,15 +19,6 @@ export default class Footer extends Component {
               <Row>
                 <a className="contact-link" target="_blank" href="https://www.meetup.com/JavaScript-New-York-City/">JavaScript.NYC on Meetup</a>
               </Row>
-              <Row>
-                <a className="contact-link">Link</a>
-              </Row>
-              <Row>
-                <a className="contact-link">Link</a>
-              </Row>
-              <Row>
-                <a className="contact-link">Link</a>
-              </Row>
             </Col>
           </Col>
           <Col md={4} sm={4} xs={4}>
